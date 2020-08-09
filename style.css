@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'Telefonica Regular';
+  font-weight: 400;
+  src: url(assets/fonts/telefonica-regular-webfont.ttf); }
+@font-face {
+  font-family: 'Telefonica Regular';
+  font-weight: 700;
+  src: url(assets/fonts/telefonica-bold-webfont.ttf); }
+@font-face {
+  font-family: 'Telefonica Regular';
+  font-style: italic;
+  src: url(assets/fonts/telefonica-hand-webfont.ttf); }
+html {
+  font-size: 12px;
+  scroll-behavior: smooth; }
+
+body {
+  color: #666666;
+  font-family: 'Telefonica Regular', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    color: inherit;
+    text-decoration: none; }
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1250px; } }
+@media (min-width: 1600px) {
+  html {
+    font-size: 14px; }
+
+  .container {
+    max-width: 1300px; } }
+@media (min-width: 1900px) {
+  html {
+    font-size: 15px; }
+
+  .container {
+    max-width: 1400px; } }
+.bg-blue,
+.btn-blue {
+  background-color: #5BA7DF;
+  color: white; }
+
+.btn-blue:hover {
+  background: rgba(91, 167, 223, 0.8);
+  color: white;
+  cursor: pointer; }
+  .btn-blue:hover a {
+    cursor: pointer; }
+
+.bg-orange,
+.btn-orange {
+  background-color: #E19C00;
+  color: white; }
+
+.btn-orange {
+  border: 2px solid white; }
+  .btn-orange:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    cursor: pointer; }
+    .btn-orange:hover a {
+      cursor: pointer; }
+
+.btn-green {
+  background: #82c51a;
+  color: white;
+  line-height: 1; }
+  .btn-green:hover {
+    color: white;
+    background: rgba(130, 197, 26, 0.875);
+    cursor: pointer; }
+    .btn-green:hover a {
+      cursor: pointer; }
+
+.text-blue {
+  color: #5BA7DF; }
+
+h1.lg, .h1.lg {
+  font-size: 5.8rem; }
+h1.xl, .h1.xl {
+  font-size: 8rem; }
+
+h2, .h2 {
+  font-size: 3.8rem; }
+
+h3, .h3 {
+  font-size: 2.86667rem; }
+  h3.lg, .h3.lg {
+    font-size: 3.1333rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+  h5.lg, .h5.lg {
+    font-size: 1.333rem; }
+
+p, .p {
+  font-size: 1.033333rem; }
+  p.lg, .p.lg {
+    font-size: 1.0666667rem; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.font-weight-black {
+  font-weight: 900; }
+
+.font-weight-black {
+  font-weight: 900; }
+
+.nav h5 {
+  color: #666666; }
+.nav .medal {
+  padding: .75rem 1.25rem; }
+
+.banner {
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat; }
+  .banner .container .bggreen {
+    background-image: url("assets/ellipse.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 21rem;
+    padding: 3rem 2rem 3rem 6rem; }
+
+.shadw {
+  box-shadow: 0 5px 0 #ededed; }
+  .shadw form {
+    width: 80%;
+    margin: 0 auto; }
+
+.medal {
+  background: #E19C00;
+  border-radius: 3px; }
+
+.arrow {
+  position: relative; }
+  .arrow:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0rem;
+    background-image: url("assets/arrow_down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 2rem; }
+
+.form-control {
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  height: 3rem;
+  border-radius: .325rem;
+  font-weight: 500; }
+  .form-control::placeholder {
+    text-align: left;
+    color: #AAAAAA;
+    font-weight: lighter; }
+
+label {
+  color: #757575; }
+
+button.g-recaptcha {
+  background-color: #E19C00;
+  color: white;
+  border: 1px solid #E19C00;
+  font-size: 1.25rem;
+  line-height: 0;
+  height: 3rem;
+  border-radius: .325rem;
+  font-weight: 500; }
+
+.card {
+  border-radius: .45rem;
+  border: 0.2rem solid #5BA7DF;
+  height: 100%; }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem; }
+    .card .card-body .h1 {
+      font-size: 3rem; }
+      .card .card-body .h1 .lg {
+        font-size: 5.5rem; }
+    .card .card-body .oferta {
+      background: rgba(225, 156, 0, 0.25);
+      color: #E19C00;
+      border-radius: 3px; }
+      .card .card-body .oferta h4 {
+        font-size: 1.841333rem; }
+    .card .card-body > span {
+      width: 100%;
+      border-bottom: 1px solid #dfdfdf;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem; }
+      .card .card-body > span:last-child {
+        border: none; }
+      .card .card-body > span h4 {
+        color: #666666;
+        font-size: 1.66rem; }
+      .card .card-body > span h5 {
+        color: #666666; }
+  .card .card-footer {
+    border-bottom-left-radius: .55rem;
+    border-bottom-right-radius: .55rem;
+    background: none;
+    border-top: none; }
+
+@media (max-width: 1466px) {
+  .banner {
+    background-image: url("assets/background_md.png"); } }
+@media (max-width: 992px) {
+  .banner {
+    background-image: none;
+    background-color: #82c51a;
+    min-height: 400px; }
+    .banner .container .bggreen {
+      background-image: none;
+      padding: 0; }
+      .banner .container .bggreen .medal {
+        font-size: 1.875rem;
+        font-weight: bold !important;
+        padding: 0.75rem 1.25rem !important; }
+      .banner .container .bggreen * {
+        text-align: center; }
+
+  .shadw form {
+    min-width: 720px; } }
+@media (max-width: 768px) {
+  .nav img {
+    max-width: 30vw; }
+
+  .shadw {
+    border: none; }
+    .shadw form {
+      width: 100%;
+      min-width: 0; }
+      .shadw form p {
+        font-size: 4.5rem !important;
+        line-height: 5rem !important;
+        text-align: center; }
+        .shadw form p em {
+          font-size: 3rem !important; }
+
+  .form-control {
+    padding: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem !important; }
+    .form-control::placeholder {
+      color: #AEAEAE;
+      text-align: center;
+      font-size: 1.5rem !important; }
+
+  .arrow:after {
+    display: none; }
+
+  .bg-blue.d-block h5 {
+    font-size: 2rem !important; }
+  .bg-blue.d-block button {
+    border: none; } }
+
+/*# sourceMappingURL=style.css.map */

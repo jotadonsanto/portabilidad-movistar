@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Telefonica Regular';
+    font-weight: 400;
+    src: url(assets/fonts/telefonica-regular-webfont.ttf);
+}
+@font-face {
+    font-family: 'Telefonica Regular';
+    font-weight: 700;
+    src: url(assets/fonts/telefonica-bold-webfont.ttf);
+}
+@font-face {
+    font-family: 'Telefonica Regular';
+    font-style: italic;
+    src: url(assets/fonts/telefonica-hand-webfont.ttf);
+}
+//Colors
+$blueColor: #5BA7DF;
+$orangeColor: #E19C00;
+
+html{
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+body{
+    color: #666666;
+    font-family: 'Telefonica Regular', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        color: inherit;
+        text-decoration: none;
+    }
+}
+//Container Widths
+@media (min-width: 1366px){
+    .container{
+        max-width: 1250px;
+    }
+}
+@media (min-width: 1600px){
+    html{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 1300px;
+    }
+}
+@media (min-width: 1900px){
+    html{
+        font-size: 15px;
+    }
+    .container{
+        max-width: 1400px;
+    }
+}
+
+//Backgrounds, Texts Colors
+.bg-blue,
+.btn-blue{
+    background-color: $blueColor;
+    color: white;
+}
+.btn-blue{
+    &:hover{
+        background: rgba($color: $blueColor, $alpha: .8);
+        color: white;
+        cursor: pointer;
+        a{
+            cursor: pointer;
+        }
+    }
+}
+.bg-orange,
+.btn-orange{
+    background-color: $orangeColor;
+    color: white;
+}
+.btn-orange{
+    border: 2px solid white;
+    &:hover{
+        background: rgba($color: white, $alpha: .15);
+        color: white;
+        cursor: pointer;
+        a{
+            cursor: pointer;
+        }
+    }
+}
+.btn-green{
+    background: #82c51a;
+    color: white;
+    line-height: 1;
+    &:hover{
+        color: white;
+        background: rgba($color: #82c51a, $alpha: .875);
+        cursor: pointer;
+        a{
+            cursor: pointer;
+        }
+    }
+}
+.text-blue{
+    color: $blueColor;
+}
+//Font Sizes
+h1, .h1{
+    &.lg{
+        font-size: 5.8rem;
+    }
+    &.xl{
+        font-size: 8rem;
+    }
+}
+h2, .h2{
+    font-size: 3.8rem;
+}
+h3, .h3{
+    font-size: 2.86667rem;
+    &.lg{
+        font-size: 3.1333rem;
+    }
+}
+h4, .h4{
+    font-size: 1.5rem;
+}
+h5, .h5{
+    font-size: 1.25rem;
+    &.lg{
+        font-size: 1.333rem;
+    }
+}
+p, .p{
+    font-size: 1.033333rem;
+    &.lg{
+        font-size: 1.0666667rem;
+    }
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+.font-weight-black{
+    font-weight: 900;
+}
+.font-weight-black{
+    font-weight: 900;
+}
+//Sections
+.nav{
+    h5{
+        color: #666666;
+    }
+    .medal{
+        padding: .75rem 1.25rem;
+    }
+} 
+.banner{
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    .container{
+        .bggreen{
+            background-image: url('assets/ellipse.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 21rem;
+            padding: 3rem 2rem 3rem 6rem;
+        }
+    }
+}
+.shadw{
+    box-shadow: 0 5px 0 #ededed;
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.medal{
+    background: $orangeColor;
+    border-radius: 3px;
+}
+.arrow{
+    position: relative;
+    &:after{
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0rem;
+        background-image: url('assets/arrow_down.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 2rem;
+    }
+}
+//Inputs y Submit
+.form-control{
+    border: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+    height: 3rem;
+    border-radius: .325rem;
+    font-weight: 500;
+    &::placeholder{
+        text-align: left;
+        color: #AAAAAA;
+        font-weight: lighter;
+    }
+}
+label{
+    color: #757575;
+}
+button.g-recaptcha{
+    background-color: $orangeColor;
+    color: white;
+    border: 1px solid $orangeColor;
+    font-size: 1.25rem;
+    line-height: 0;
+    height: 3rem;
+    border-radius: .325rem;
+    font-weight: 500;
+}
+
+//Cards
+.card{
+    border-radius: .45rem;
+    border: .2rem solid $blueColor;
+    height: 100%;
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        .h1{
+            font-size: 3rem;
+            .lg{
+                font-size: 5.5rem;
+            }
+        }
+        .oferta{
+            background: rgba($color: $orangeColor, $alpha: .25);
+            color: $orangeColor;
+            border-radius: 3px;
+            h4{
+                font-size: 1.841333rem;
+            }
+        }
+        > span{
+            width: 100%;
+            border-bottom: 1px solid #dfdfdf;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            &:last-child{
+                border: none;
+            }
+            h4{
+                color: #666666;
+                font-size: 1.66rem;
+            }
+            h5{
+                color: #666666;
+            }
+        }
+    }
+    .card-footer{
+        border-bottom-left-radius: .55rem;
+        border-bottom-right-radius: .55rem;
+        background: none;
+        border-top: none;
+    }
+}
+
+//Responsive
+@media (max-width: 1466px){
+    .banner{
+        background-image: url('assets/background_md.png');
+    }
+}
+@media (max-width: 992px){
+    .banner{
+        background-image: none;
+        background-color: #82c51a;
+        min-height: 400px;
+        .container{
+            .bggreen{
+                background-image: none;
+                padding: 0;
+                .medal{
+                    font-size: 1.875rem;
+                    font-weight: bold!important;
+                    padding: .75rem 1.25rem!important;
+                }
+                *{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .shadw{
+        form{
+            min-width: 720px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .nav{
+        img{
+            max-width: 30vw;
+        }
+    }
+    .shadw{
+        border: none;
+        form{
+            width: 100%;
+            min-width: 0;
+            p{
+                font-size: 4.5rem!important;
+                line-height: 5rem!important;
+                text-align: center;
+                em{
+                    font-size: 3rem!important;
+                }
+            }
+        }
+    }
+    .form-control{
+        padding: 2rem;
+        font-weight: 400;
+        font-size: 1.5rem!important;
+        &::placeholder{
+            color: #AEAEAE;
+            text-align: center;
+            font-size: 1.5rem!important;
+        }
+    }
+    .arrow{
+        &:after{
+            display: none;
+        }
+    }
+    .bg-blue{
+        &.d-block{
+            h5{
+                font-size: 2rem!important;
+            }
+            button{
+                border: none;
+            }
+        }
+    }
+}
