@@ -14,8 +14,8 @@
     src: url(assets/fonts/telefonica-hand-webfont.ttf);
 }
 //Colors
-$blueColor: #5BA7DF;
-$orangeColor: #E19C00;
+$blueColor: #00a9e2;
+$orangeColor: #f79d00;
 
 html{
     font-size: 12px;
@@ -89,12 +89,12 @@ a{
     }
 }
 .btn-green{
-    background: #82c51a;
+    background: #56c600;
     color: white;
     line-height: 1;
     &:hover{
         color: white;
-        background: rgba($color: #82c51a, $alpha: .875);
+        background: rgba($color: #56c600, $alpha: .875);
         cursor: pointer;
         a{
             cursor: pointer;
@@ -149,6 +149,7 @@ p, .p{
 }
 //Sections
 .nav{
+    border-top: .66rem solid #cacaca;
     h5{
         color: #666666;
     }
@@ -242,9 +243,13 @@ button.g-recaptcha{
             }
         }
         .oferta{
-            background: rgba($color: $orangeColor, $alpha: .25);
+            background: #fef1de;
             color: $orangeColor;
             border-radius: 3px;
+            &.inverted{
+                background: $orangeColor;
+                color: white;
+            }
             h4{
                 font-size: 1.841333rem;
             }
@@ -283,7 +288,7 @@ button.g-recaptcha{
 @media (max-width: 992px){
     .banner{
         background-image: none;
-        background-color: #82c51a;
+        background-color: #56c600;
         min-height: 400px;
         .container{
             .bggreen{
@@ -330,11 +335,12 @@ button.g-recaptcha{
     .form-control{
         padding: 2rem;
         font-weight: 400;
-        font-size: 1.5rem!important;
+        font-size: 2rem!important;
+        text-align: center;
         &::placeholder{
             color: #AEAEAE;
             text-align: center;
-            font-size: 1.5rem!important;
+            font-size: 2rem!important;
         }
     }
     .arrow{
@@ -350,6 +356,24 @@ button.g-recaptcha{
             button{
                 border: none;
             }
+        }
+    }
+}
+@media (max-width: 420px){
+    .card{
+        h3.lg{
+            font-size: 5.2rem;
+        }
+        h5{
+            font-size: 2.25rem;
+        }
+        .oferta{
+            h4{
+                font-size: 2.6rem;
+            }
+        }
+        p, .p{
+            font-size: 1.5rem;
         }
     }
 }

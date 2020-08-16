@@ -42,11 +42,11 @@ a {
     max-width: 1400px; } }
 .bg-blue,
 .btn-blue {
-  background-color: #5BA7DF;
+  background-color: #00a9e2;
   color: white; }
 
 .btn-blue:hover {
-  background: rgba(91, 167, 223, 0.8);
+  background: rgba(0, 169, 226, 0.8);
   color: white;
   cursor: pointer; }
   .btn-blue:hover a {
@@ -54,7 +54,7 @@ a {
 
 .bg-orange,
 .btn-orange {
-  background-color: #E19C00;
+  background-color: #f79d00;
   color: white; }
 
 .btn-orange {
@@ -67,18 +67,18 @@ a {
       cursor: pointer; }
 
 .btn-green {
-  background: #82c51a;
+  background: #56c600;
   color: white;
   line-height: 1; }
   .btn-green:hover {
     color: white;
-    background: rgba(130, 197, 26, 0.875);
+    background: rgba(86, 198, 0, 0.875);
     cursor: pointer; }
     .btn-green:hover a {
       cursor: pointer; }
 
 .text-blue {
-  color: #5BA7DF; }
+  color: #00a9e2; }
 
 h1.lg, .h1.lg {
   font-size: 5.8rem; }
@@ -115,10 +115,12 @@ p, .p {
 .font-weight-black {
   font-weight: 900; }
 
-.nav h5 {
-  color: #666666; }
-.nav .medal {
-  padding: .75rem 1.25rem; }
+.nav {
+  border-top: .66rem solid #cacaca; }
+  .nav h5 {
+    color: #666666; }
+  .nav .medal {
+    padding: .75rem 1.25rem; }
 
 .banner {
   background-image: url("assets/background.png");
@@ -140,7 +142,7 @@ p, .p {
     margin: 0 auto; }
 
 .medal {
-  background: #E19C00;
+  background: #f79d00;
   border-radius: 3px; }
 
 .arrow {
@@ -172,9 +174,9 @@ label {
   color: #757575; }
 
 button.g-recaptcha {
-  background-color: #E19C00;
+  background-color: #f79d00;
   color: white;
-  border: 1px solid #E19C00;
+  border: 1px solid #f79d00;
   font-size: 1.25rem;
   line-height: 0;
   height: 3rem;
@@ -183,7 +185,7 @@ button.g-recaptcha {
 
 .card {
   border-radius: .45rem;
-  border: 0.2rem solid #5BA7DF;
+  border: 0.2rem solid #00a9e2;
   height: 100%; }
   .card .card-body {
     display: flex;
@@ -195,9 +197,12 @@ button.g-recaptcha {
       .card .card-body .h1 .lg {
         font-size: 5.5rem; }
     .card .card-body .oferta {
-      background: rgba(225, 156, 0, 0.25);
-      color: #E19C00;
+      background: #fef1de;
+      color: #f79d00;
       border-radius: 3px; }
+      .card .card-body .oferta.inverted {
+        background: #f79d00;
+        color: white; }
       .card .card-body .oferta h4 {
         font-size: 1.841333rem; }
     .card .card-body > span {
@@ -224,7 +229,7 @@ button.g-recaptcha {
 @media (max-width: 992px) {
   .banner {
     background-image: none;
-    background-color: #82c51a;
+    background-color: #56c600;
     min-height: 400px; }
     .banner .container .bggreen {
       background-image: none;
@@ -257,11 +262,12 @@ button.g-recaptcha {
   .form-control {
     padding: 2rem;
     font-weight: 400;
-    font-size: 1.5rem !important; }
+    font-size: 2rem !important;
+    text-align: center; }
     .form-control::placeholder {
       color: #AEAEAE;
       text-align: center;
-      font-size: 1.5rem !important; }
+      font-size: 2rem !important; }
 
   .arrow:after {
     display: none; }
@@ -270,5 +276,14 @@ button.g-recaptcha {
     font-size: 2rem !important; }
   .bg-blue.d-block button {
     border: none; } }
+@media (max-width: 420px) {
+  .card h3.lg {
+    font-size: 5.2rem; }
+  .card h5 {
+    font-size: 2.25rem; }
+  .card .oferta h4 {
+    font-size: 2.6rem; }
+  .card p, .card .p {
+    font-size: 1.5rem; } }
 
 /*# sourceMappingURL=style.css.map */
