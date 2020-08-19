@@ -242,8 +242,8 @@ button.g-recaptcha {
         text-align: center; }
 
   .shadw form {
-    min-width: 720px; } }
-@media (max-width: 768px) {
+    min-width: 720px; }
+
   .nav img {
     max-width: 30vw; }
 
@@ -275,8 +275,8 @@ button.g-recaptcha {
   .bg-blue.d-block h5 {
     font-size: 2rem !important; }
   .bg-blue.d-block button {
-    border: none; } }
-@media (max-width: 420px) {
+    border: none; }
+
   .card h3.lg {
     font-size: 5.2rem; }
   .card h5 {
